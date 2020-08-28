@@ -12,8 +12,8 @@ lastdate = str_extract(lastup,"20[0-9]{2}-[0-9]{2}-[0-9]{2}")
 blackspace = c("18120206","613619264","478353848","327497673","13221207","619275307")
 blacklist = c("")
 
-mydf = read.csv(lastup,header = F)
-colnames(mydf)=c("link","title", "length","view","text","upload","up","space")
+mydf = read.csv(lastup,header = T)
+#colnames(mydf)=c("link","title", "length","view","text","upload","up","space")
 
 mydf$viewnum = ifelse(grepl("万",mydf$view),
                       as.numeric(gsub("万", "", mydf$view))*10000,
