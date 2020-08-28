@@ -1,0 +1,11 @@
+name: "哔哩熙熙"
+navbar:
+  title: "Bilixixi"
+  left:
+    - text: "首页"
+      href: index.html
+    - text: "帮助"
+      href: help.html
+    #- text: "Links"
+    #  href: Links.html
+output_dir: "docs"
