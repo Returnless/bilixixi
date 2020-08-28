@@ -1,7 +1,7 @@
 # 欢迎来到哔哩熙熙动画
 ### b站罗云熙首页拯救计划
 
-[点此进入](https://returnless.github.io/test/)
+[点此进入](https://returnless.github.io/bilixixi/)
 
 欢迎来到一枚罗狮粉自制的b站首页净化计划。
 
