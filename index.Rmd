@@ -1,5 +1,6 @@
 ---
-title: "TEST"
+title: "哔哩熙熙动画！"
+author: "☁️B站罗云熙首页拯救计划☁️"
 output:
   html_document:
     collapsed: false
@@ -14,8 +15,7 @@ source("Bilixixi.R")
 
 ```
 
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-
+支持排序·筛选·搜索功能 | 已人工屏蔽部分路透用户 | 暂只支持8月16日后上线的作品
 
 ```{r vie}
 # vie[,c("titlelink","lengthnum","viewnum","text","upload","uplink")]
@@ -57,4 +57,4 @@ datatable(vie, filter = 'top',
 
 ```
 
-最近更新: `r lastdate`
+最近更新: `r lastdate` | 微博: [\@Re_空中三日](https://www.weibo.com/6722029638/)
