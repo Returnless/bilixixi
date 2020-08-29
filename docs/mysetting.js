@@ -1,1 +1,1 @@
-$.fn.DataTable.ext.pager.numbers_length = 9;
+$.fn.DataTable.ext.pager.numbers_length = 7;
