@@ -61,6 +61,13 @@ datatable(vie, filter = 'top',style ="bootstrap",
                      "'<span title=\"' + data + '\">'+Math.floor(data/1000)/10+'万</span>' : data;",
                      "}")
               ),
+              list(targets=5,
+                   render = JS(
+                     "function(data, type, row, meta) {",
+                     "return type === 'display' ?",
+                     "'<span title=\"' + data + '\">' + data.substr(5, 12) + '</span>' : data;",
+                     "}")
+              ),
               list(targets= '_all',
                 createdCell=JS(
                   "function (td, cellData, rowData, row, col) {",
