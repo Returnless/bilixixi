@@ -7,7 +7,7 @@ output:
     toc_float: true
     collapsed: false
     number_sections: false
-    toc_depth: 3
+    toc_depth: 4
     includes:
        in_header: GA.html
 ---
@@ -51,7 +51,13 @@ knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=FALSE)
 
 ·欢迎联系 [\@Re_空中三日](https://www.weibo.com/6722029638/) 提出建议或技术支持~
 
+<br/>
 
+### 更新日志
 
-  
+    8.29
+
+上线第一天，收获了许多支持，谢谢大家！  
+
+优化了存储模式；扩展了屏蔽列表。
   
