@@ -23,7 +23,7 @@ source("Bilixixi.R")
 # vie[,c("titlelink","lengthnum","viewnum","text","upload","uplink")]
 htmltools::tags$script(src = "mysetting.js")
 
-datatable(vie, filter = 'top', 
+datatable(vie, filter = 'top',style ="bootstrap",
 #####################
           options = list(
                         pagingType="numbers",
@@ -53,10 +53,27 @@ datatable(vie, filter = 'top',
                      "return type === 'display' && data>=10000 ?",
                      "'<span title=\"' + data + '\">'+Math.floor(data/1000)/10+'万</span>' : data;",
                      "}")
-              )
+              ),
+               list(targets=3,
+                   render = JS(
+                     "function(data, type, row, meta) {",
+                     "return type === 'display' && data>=10000 ?",
+                     "'<span title=\"' + data + '\">'+Math.floor(data/1000)/10+'万</span>' : data;",
+                     "}")
+              ),
+              list(targets= '_all',
+                createdCell=JS(
+                  "function (td, cellData, rowData, row, col) {",
+                    "$(td).css('padding', '8px 4px 8px 4px')",
+                  "}")
+              ),
+              list(targets=2:5,
+                   class="dt-body-center"),
+              list(targets='_all',
+                   class="dt-head-center")
           )),
           escape = FALSE,
-          colnames = c("标题","时长","点击量","弹幕数","上传日期","阿婆主")
+          colnames = c("标题","时长","观看","弹幕","日期","UP")
           )
 
 ```
