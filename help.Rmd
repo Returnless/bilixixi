@@ -30,7 +30,7 @@ knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=FALSE)
 
 <br/>
 
-###支持排序·筛选·搜索功能
+### 支持排序·筛选·搜索功能
 ·可以点击每一列的名称进行排序 （如点击“点击量”查看观看次数最多的作品）
 
 ·可以点击每一列下方的空格进行筛选（如点击“上传日期”下方空格，拖动滑块选择上传日期范围）
@@ -39,12 +39,12 @@ knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=FALSE)
 
 <br/>
 
-###已人工屏蔽部分路透用户
+### 已人工屏蔽部分路透用户
 ·欢迎联系 [\@Re_空中三日](https://www.weibo.com/6722029638/) 添加屏蔽账号
 
 <br/>
 
-###暂只支持8月16日后上线的作品
+### 暂只支持8月16日后上线的作品
 更多功能正在完善中~
 
 ·欢迎联系 [\@Re_空中三日](https://www.weibo.com/6722029638/) 提出建议或技术支持~
