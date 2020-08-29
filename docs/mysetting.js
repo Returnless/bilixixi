@@ -1,0 +1,1 @@
+$.fn.DataTable.ext.pager.numbers_length = 9;

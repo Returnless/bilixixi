@@ -1,4 +1,5 @@
-# TTTTTTESSSSSSSSTTTTTTTTTTT
+# bilixixi.cc
+# @Re_空中三日
 
 library(dplyr)
 library(tidyr)
@@ -11,7 +12,7 @@ lastdate = str_extract(lastup,"20[0-9]{2}-[0-9]{2}-[0-9]{2}")
 blackspace = c("18120206","613619264","478353848","327497673","13221207","619275307","22120332","602128624","257433625","508380848","322729836","28602227","265699557")
 blacklist = c("")
 
-mydf = read.csv(lastup,header = T)
+mydf = read.csv(paste0("docs/",lastup),header = T)
 #colnames(mydf)=c("link","title", "length","view","text","upload","up","space")
 
 mydf$viewnum = ifelse(grepl("万",mydf$view),

@@ -21,10 +21,12 @@ source("Bilixixi.R")
 
 ```{r vie}
 # vie[,c("titlelink","lengthnum","viewnum","text","upload","uplink")]
+htmltools::tags$script(src = "mysetting.js")
 
 datatable(vie, filter = 'top', 
 #####################
           options = list(
+                        pagingType="numbers",
                         pageLength = 30,
                         language = list(search = '搜索:',
                         lengthMenu='每页显示 _MENU_ 个视频',
