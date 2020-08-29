@@ -5,6 +5,8 @@ output:
   html_document:
     collapsed: false
     number_sections: false
+    includes:
+       in_header: GA.html
 ---
 
 ```{r setup, include=FALSE}

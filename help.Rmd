@@ -8,6 +8,8 @@ output:
     collapsed: false
     number_sections: false
     toc_depth: 3
+    includes:
+       in_header: GA.html
 ---
 
 ```{r setup, include=FALSE}
