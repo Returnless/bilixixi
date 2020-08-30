@@ -8,9 +8,8 @@ output:
     theme: bootstrap
     logo: BilixixiLogo.png
     navbar:
-       - { title: "首页", href: "http://bilixixi.cc/index.html", align: left }
-       - { title: "帮助", href: "http://bilixixi.cc/help.html", align: left }
-       
+       - { title: "首页", href: "index.html", align: left }
+       - { title: "帮助", href: "help.html", align: left }
     includes:
        in_header: GA.html
 ---
@@ -48,8 +47,10 @@ Column {data-width=650}
 htmltools::tags$script(src = "mysetting.js")
 
 datatable(vie, rownames = FALSE, filter = 'top',style ="bootstrap",
+          
 #####################
           options = list(
+            lengthChange=F,
             search = list(regex = TRUE, search = ''),
                         pagingType="numbers",
                         pageLength = 30,
@@ -110,8 +111,11 @@ datatable(vie, rownames = FALSE, filter = 'top',style ="bootstrap",
 
 ```
 
+<center>
 最近更新: `r lastdate` | 微博: [\@Re_空中三日](https://www.weibo.com/6722029638/)
+</center>
 
+</br>
 
 Column {data-width=200}
 -----------------------------------------------------------------------
