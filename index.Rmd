@@ -1,11 +1,12 @@
 ---
-title: "哔哩熙熙动画!"
+title: "Bilixixi"
 #author: "☁️B站罗云熙首页拯救计划☁️"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
     vertical_layout: scroll
     theme: bootstrap
+    logo: BilixixiLogo.png
     navbar:
        - { title: "首页", href: "http://bilixixi.cc/index.html", align: left }
        - { title: "帮助", href: "http://bilixixi.cc/help.html", align: left }

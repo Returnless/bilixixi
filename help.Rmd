@@ -6,6 +6,7 @@ output:
     orientation: columns
     vertical_layout: scroll
     theme: bootstrap
+    logo: BilixixiLogo.png
     navbar:
        - { title: "首页", href: "http://bilixixi.cc/index.html", align: left }
        - { title: "帮助", href: "http://bilixixi.cc/help.html", align: left }
