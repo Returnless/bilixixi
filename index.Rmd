@@ -23,7 +23,7 @@ source("Bilixixi.R")
 # vie[,c("titlelink","lengthnum","viewnum","text","upload","uplink")]
 htmltools::tags$script(src = "mysetting.js")
 
-datatable(vie, filter = 'top',style ="bootstrap",
+datatable(vie, rownames = FALSE, filter = 'top',style ="bootstrap",
 #####################
           options = list(
             search = list(regex = TRUE, search = ''),
@@ -41,28 +41,28 @@ datatable(vie, filter = 'top',style ="bootstrap",
                         last='最后一页')),
                         
                         columnDefs = list(
-                        list(targets=2,
+                        list(targets=1,
                         render = JS(
                      "function(data, type, row, meta) {",
                      "return type === 'display'?",
                      "'<span title=\"'+data +'\">'+Math.floor(data/60) + '分'+Math.floor(data%60)+'秒</span>' : data;",
                      "}")
               ),
-              list(targets=3,
+              list(targets=2,
                    render = JS(
                      "function(data, type, row, meta) {",
                      "return type === 'display' && data>=10000 ?",
                      "'<span title=\"' + data + '\">'+Math.floor(data/1000)/10+'万</span>' : data;",
                      "}")
               ),
-               list(targets=3,
+               list(targets=2,
                    render = JS(
                      "function(data, type, row, meta) {",
                      "return type === 'display' && data>=10000 ?",
                      "'<span title=\"' + data + '\">'+Math.floor(data/1000)/10+'万</span>' : data;",
                      "}")
               ),
-              list(targets=5,
+              list(targets=4,
                    render = JS(
                      "function(data, type, row, meta) {",
                      "return type === 'display' ?",
@@ -75,7 +75,7 @@ datatable(vie, filter = 'top',style ="bootstrap",
                     "$(td).css('padding', '8px 4px 8px 4px')",
                   "}")
               ),
-              list(targets=2:5,
+              list(targets=1:4,
                    class="dt-body-center"),
               list(targets='_all',
                    class="dt-head-center")
