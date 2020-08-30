@@ -26,7 +26,7 @@ htmltools::tags$script(src = "mysetting.js")
 datatable(vie, filter = 'top',style ="bootstrap",
 #####################
           options = list(
-            search = list(regex = TRUE, search = '^((?!屏蔽词).)*$'),
+            search = list(regex = TRUE, search = ''),
                         pagingType="numbers",
                         pageLength = 30,
                         language = list(search = '搜索:',
