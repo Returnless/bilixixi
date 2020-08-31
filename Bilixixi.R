@@ -9,7 +9,7 @@ library(data.table)
 lastup = grep("^Bilixixi.*?csv$",list.files("docs/"),value=T)[1]
 lastdate = str_extract(lastup,"20[0-9]{2}-[0-9]{2}-[0-9]{2}")
 
-#blackspace = as.character(scan("LittleBlackRoom.txt"))
+blackspace = as.character(scan("LittleBlackRoom.txt"))
 blacklist = c("")
 
 mydf = read.csv(paste0("docs/",lastup),header = T)
