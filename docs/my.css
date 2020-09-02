@@ -36,8 +36,8 @@ p{
   margin-bottom:2px;
 }
 
-h3{
-  margin-top:15px;
+h5{
+  margin-top:0px;
 }
 
 #myfilter5{
@@ -60,4 +60,19 @@ h3{
   width: 50%;
   max-width: 900px;
   min-width:550px;
+}
+
+#help{
+  margin: auto;
+  width: 50%;
+  max-width: 650px;
+}
+
+div.chart-stage{
+  padding-bottom:10px;
+}
+
+div.opening{
+  padding-left:5%;
+  padding-right:5%;
 }
