@@ -1,7 +1,4 @@
 
-html body div.chart-title {
-  display: none;
-}
 
 label.control-label{
   margin-bottom:6;
@@ -50,13 +47,6 @@ h5{
 }
 
 
-#column{
-  margin: auto;
-  width: 50%;
-  max-width: 900px;
-  min-width:550px;
-}
-
 #help{
   margin: auto;
   width: 50%;
@@ -69,6 +59,5 @@ div.chart-stage{
 }
 
 div.opening{
-  padding-left:5%;
-  padding-right:5%;
+  padding: 15px 5%;
 }

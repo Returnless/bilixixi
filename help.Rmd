@@ -33,7 +33,6 @@ help {data-width=650}
 </center>
 
 <div class="opening">
-<br/>
 
 欢迎来到一枚罗狮粉自制的b站首页净化计划。
 
@@ -47,7 +46,7 @@ help {data-width=650}
 
 我们不生产视频，也不做阿婆主的搬运工，只做好视频的指路人。
 
-<br/>
+
 </div>
 
 
