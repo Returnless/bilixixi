@@ -13,7 +13,6 @@ blackspace = as.character(scan("LittleBlackRoom.txt"))
 blacklist = c("")
 
 mydf = read.csv(paste0("docs/",lastup),header = T)
-#colnames(mydf)=c("link","title", "length","view","text","upload","up","space")
 
 mydf$viewnum = ifelse(grepl("万",mydf$view),
                       as.numeric(gsub("万", "", mydf$view))*10000,
@@ -27,8 +26,6 @@ mydf$uplink = paste0("<a href='https://space.bilibili.com/",mydf$space,"' target
 vie = mydf%>%filter(!up%in%blacklist)%>%filter(!space%in%blackspace)%>%arrange(-viewnum)
 vie$upload = as.Date(vie$upload)
 vie$lengthnum = lubridate::seconds(lubridate::hms(vie$length))
-vie = vie[,c("titlelink","lengthnum","viewnum","text","upload","uplink")]
-
-#colnames(vie)=c("BV号","标题","长度","观看","弹幕","上传","阿婆主")
+vie = vie[,c("titlelink","lengthnum","viewnum","text","upload","uplink","tag")]
 
 
