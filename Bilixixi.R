@@ -6,7 +6,7 @@ library(tidyr)
 library(stringr)
 library(data.table)
 
-lastup = grep("^Bilixixi.*?csv$",list.files("docs/"),value=T)[1]
+lastup = grep("^BilixixiBase.*?csv$",list.files("docs/"),value=T)[1]
 lastdate = str_extract(lastup,"20[0-9]{2}-[0-9]{2}-[0-9]{2}")
 
 blackspace = as.character(scan("LittleBlackRoom.txt"))
