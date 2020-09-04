@@ -1,0 +1,46 @@
+---
+title: "哔哩熙熙动画!"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: scroll
+    theme: bootstrap
+    logo: BilixixiLogo.png
+    css: myhelp.css
+    navbar:
+       - { title: "首页", href: "index.html", align: left }
+       - { title: "帮助", href: "help.html", align: left }
+       - { title: "殿堂", href: "diantang.html", align: left }
+    includes:
+       in_header: GA.html
+       after_body: myfooter.html
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=FALSE)
+```
+
+
+
+
+help {data-width=650}
+-----------------------------------------------------------------------
+
+<center>
+
+<h1> 哔哩熙熙动画!</h1>
+<h4>☁️殿堂☁️</h4>
+
+</center>
+
+<div class="opening">
+<center>
+
+哔哩熙熙，我们是认真的!
+
+\>\> b站过往海量视频挖掘中... \<\<
+
+</center>
+
+</div>
+
