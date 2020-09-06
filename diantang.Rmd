@@ -6,41 +6,144 @@ output:
     vertical_layout: scroll
     theme: bootstrap
     logo: BilixixiLogo.png
-    css: myhelp.css
+    css: my.css
     navbar:
-       - { title: "首页", href: "index.html", align: left }
-       - { title: "帮助", href: "help.html", align: left }
+       - { title: "最新", href: "index.html", align: left }
        - { title: "殿堂", href: "diantang.html", align: left }
+       - { title: "帮助", href: "help.html", align: left }
     includes:
        in_header: GA.html
        after_body: myfooter.html
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=FALSE)
+
+knitr::opts_chunk$set(echo = FALSE,message=FALSE,warning=FALSE, cache=FALSE)
+library(DT)
+library(stringr)
+library(crosstalk)
+source("BilixixiDiantang.R")
+try = SharedData$new(vie)
+
 ```
 
 
-
-
-help {data-width=650}
+Column {data-width=650}
 -----------------------------------------------------------------------
 
-<center>
 
+<center>
+</br>
 <h1> 哔哩熙熙动画!</h1>
-<h4>☁️殿堂☁️</h4>
+<h4>☁️ 殿堂 ☁️</h4>
+</br>
 
+支持排序·筛选·搜索功能 | 支持标签搜索·屏蔽 | 支持投币100以上的历史作品
+
+</br>
 </center>
 
-<div class="opening">
-<center>
 
-哔哩熙熙，我们是认真的!
+### {data-height=103}
 
-\>\> b站过往海量视频挖掘中... \<\<
+```{r}
+bscols(
+filter_checkbox("myfilter1", "年份", try, ~factor(ifelse(year(vie$upload) <=2018, "2018以前",ifelse(year(vie$upload)  <= 2019, "2019年内", "2020以来")),levels = c("2018以前", "2019年内", "2020以来"))),
 
-</center>
+filter_checkbox("myfilter2", "视频时长", try, ~factor(ifelse(lengthnum < 300 , "5分以内",ifelse(lengthnum < 900, "5-15分", "15分以上")),levels = c("5分以内", "5-15分", "15分以上"))),
 
-</div>
+filter_checkbox("myfilter3", "播放数据", try, ~factor(ifelse(viewnum < 10000 , "1万以下",ifelse(viewnum < 50000, "1万-5万", "5万以上")),levels = c("1万以下", "1万-5万", "5万以上"))),
+
+filter_checkbox("myfilter4", "标题类型", try, ~ifelse(type==T, "多人向" , "个人向"))
+)
+```
+
+###
+
+```{r vie}
+
+datatable(try, rownames = FALSE,style ="bootstrap",selection="none",filter="top",
+          options = list(
+            deferRender=TRUE,
+            #lengthChange=T,
+            search = list(regex = TRUE, search = '^((?!输入屏蔽词).)*$'),
+                        pagingType="numbers",
+                        pageLength = 30,
+                        language = list(search = '屏蔽词:',
+                        lengthMenu='每页显示 _MENU_ 个视频',
+                        zeroRecords='什么也没找到，换个关键词试试',
+                        info='现在第 _PAGE_ 页 共 _PAGES_ 页',
+                        infoEmpty='没有可显示的页面',
+                        infoFiltered='(从 _MAX_ 项中搜索)',
+                        paginate=list(previous='上一页',
+                        'next'='下一页',
+                        first='第一页',
+                        last='最后一页')),
+                        
+          columnDefs = list(
+              # list(targets=0,
+              #      render = JS(
+              #        "function(data, type, row, meta) {",
+              #        "return type === 'display'?",
+              #        "data.split('>');",
+              #        "}")
+              # ),
+              list(targets=1,
+                   render = JS(
+                     "function(data, type, row, meta) {",
+                     "return type === 'display'?",
+                     "'<span title=\"'+data +'\">'+Math.floor(data/60) + '分'+Math.floor(data%60)+'秒</span>' : data;",
+                     "}")
+              ),
+              list(targets=7,
+                   visible=FALSE
+              ),
+              list(targets=8,
+                   visible=FALSE
+              ),
+               list(targets=2,
+                   render = JS(
+                     "function(data, type, row, meta) {",
+                     "return type === 'display' && data>=10000 ?",
+                     "'<span title=\"' + data + '\">'+Math.floor(data/1000)/10+'万</span>' : data;",
+                     "}")
+              ),
+              list(targets=3,
+                   render = JS(
+                     "function(data, type, row, meta) {",
+                     "return type === 'display' && data>=10000 ?",
+                     "'<span title=\"' + data + '\">'+Math.floor(data/1000)/10+'万</span>' : data;",
+                     "}")
+              ),
+              list(targets=4,
+                   render = JS(
+                     "function(data, type, row, meta) {",
+                     "return type === 'display' && data>=10000 ?",
+                     "'<span title=\"' + data + '\">'+Math.floor(data/1000)/10+'万</span>' : data;",
+                     "}")
+              ),
+              list(targets=5,
+                   render = JS(
+                     "function(data, type, row, meta) {",
+                     "return type === 'display' ?",
+                     "'<span title=\"' + data + '\">' + data.substr(2, 8) + '</span>' : data;",
+                     "}")
+              ),
+              # list(targets= '_all',
+              #   createdCell=JS(
+              #     "function (td, cellData, rowData, row, col) {",
+              #       "$(td).css('padding', '8px 4px 8px 4px')",
+              #     "}")
+              # ),
+              list(targets=1:4,
+                   class="dt-body-center"),
+              list(targets='_all',
+                   class="dt-head-center")
+          )),
+          escape = FALSE,
+          colnames = c("标题","时长","观看","弹幕","投币","日期","UP","Tag","Type")
+          )
+
+
+```
 

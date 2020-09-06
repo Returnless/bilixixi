@@ -8,9 +8,9 @@ output:
     logo: BilixixiLogo.png
     css: my.css
     navbar:
-       - { title: "首页", href: "index.html", align: left }
-       - { title: "帮助", href: "help.html", align: left }
+       - { title: "最新", href: "index.html", align: left }
        - { title: "殿堂", href: "diantang.html", align: left }
+       - { title: "帮助", href: "help.html", align: left }
     includes:
        in_header: GA.html
        after_body: myfooter.html
