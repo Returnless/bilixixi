@@ -4,7 +4,9 @@
 library(dplyr)
 library(tidyr)
 library(stringr)
+library(lubridate)
 library(data.table)
+
 
 lastup = grep("^BilixixiBase.*?csv$",list.files("docs/"),value=T)[1]
 lastdate = str_extract(lastup,"20[0-9]{2}-[0-9]{2}-[0-9]{2}")
