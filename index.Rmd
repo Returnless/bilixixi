@@ -41,8 +41,15 @@ Column {data-width=650}
 
 支持排序·筛选·搜索功能 | 已人工屏蔽部分路透 | 支持8月16日后作品
 
+<a href="help.html#event" title="微博搜索第七届中国电视好演员网剧组·微信搜中国电视好演员官方公众号" style="background-color:#FFFFFF;color:purple;text-decoration:none">【限时活动】哔哩熙熙为罗云熙参加中国电视好演员评选打call~记得前往微博·微信投票哦！</a>
+
 </br>
+
 </center>
+
+
+
+
 
 ### {data-height=103}
 
@@ -121,4 +128,8 @@ datatable(try, rownames = FALSE, filter = 'top',style ="bootstrap",selection="no
           )
 
 ```
+
+
+
+
 
