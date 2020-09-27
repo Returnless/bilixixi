@@ -41,7 +41,8 @@ Column {data-width=650}
 
 支持排序·筛选·搜索功能 | 已人工屏蔽部分路透 | 支持8月16日后作品
 
-<a href="help.html#event" title="微博搜索中国电视好演员网剧组·微信搜中国好演员官方公众号" style="background-color:#FFFFFF;color:purple;text-decoration:none">【限时活动】哔哩熙熙为罗云熙参加中国电视好演员评选打call~记得前往微博·微信投票哦！</a>
+<a href="https://so.iqiyi.com/so/q_%E5%8D%8A%E6%98%AF%E8%9C%9C%E7%B3%96%E5%8D%8A%E6%98%AF%E4%BC%A4?source=input&sr=10577515516871950" title="快点这里去看超绝袁帅甜蜜恋爱！" style="background-color:#FFFFFF;color:purple;text-decoration:none">庆祝【半是蜜糖半是伤】9月27日起爱奇艺播出！</a>
+
 
 </br>
 
