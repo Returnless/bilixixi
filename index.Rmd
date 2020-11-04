@@ -23,6 +23,7 @@ library(DT)
 library(stringr)
 library(crosstalk)
 source("Bilixixi.R")
+
 try = SharedData$new(vie)
 
 ```
@@ -100,6 +101,13 @@ datatable(try, rownames = FALSE, filter = 'top',style ="bootstrap",selection="no
                    visible=FALSE
               ),
                list(targets=2,
+                   render = JS(
+                     "function(data, type, row, meta) {",
+                     "return type === 'display' && data>=10000 ?",
+                     "'<span title=\"' + data + '\">'+Math.floor(data/1000)/10+'万</span>' : data;",
+                     "}")
+              ),
+              list(targets=3,
                    render = JS(
                      "function(data, type, row, meta) {",
                      "return type === 'display' && data>=10000 ?",
