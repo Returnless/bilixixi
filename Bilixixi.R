@@ -29,10 +29,13 @@ mydf$titlelink = paste0("<a href='https://www.bilibili.com/video/",mydf$link,"' 
 mydf$uplink = paste0("<a href='https://space.bilibili.com/",mydf$space,"' target='_blank'>",mydf$up,"</a>")
 
 vie = mydf%>%filter(!up%in%blacklist)%>%filter(!space%in%blackspace)
-vie = vie%>%group_by(titlelink)%>%filter(row_number()==n())%>%arrange(-viewnum)
 
 vie$upload = as.Date(vie$upload)
 vie$lengthnum = lubridate::seconds(lubridate::hms(vie$length))
+
+vie = vie%>%group_by(titlelink)%>%filter(difftime(lastdate,upload,units = "days") <= 90)%>%
+  filter(row_number()==n())%>%arrange(-viewnum)
+
 vie = vie[,c("titlelink","lengthnum","viewnum","text","upload","uplink","tag")]
 
 

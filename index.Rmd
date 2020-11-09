@@ -40,7 +40,7 @@ Column {data-width=650}
 <h4>☁️ 罗云熙B站首页拯救计划 · 最新 ☁️</h4>
 </br>
 
-支持排序·筛选·搜索功能 | 已人工屏蔽部分路透 | 支持近3月作品
+支持排序·筛选·搜索功能 | 人工小黑屋 | 支持近3月作品 | 显示最新上传在榜期数据
 
 <a href="https://so.iqiyi.com/so/q_%E5%8D%8A%E6%98%AF%E8%9C%9C%E7%B3%96%E5%8D%8A%E6%98%AF%E4%BC%A4?source=input&sr=10577515516871950" title="快点这里去看超绝袁帅甜蜜恋爱！" style="background-color:#FFFFFF;color:purple;text-decoration:none">庆祝【半是蜜糖半是伤】圆满结局！</a>
 
@@ -48,8 +48,6 @@ Column {data-width=650}
 </br>
 
 </center>
-
-
 
 
 
