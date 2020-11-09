@@ -13,7 +13,7 @@ output:
        - { title: "帮助", href: "help.html", align: left }
     includes:
        in_header: GA.html
-       after_body: myfooter.html
+       after_body: footer_index.html
 ---
 
 ```{r setup, include=FALSE}
@@ -135,6 +135,8 @@ datatable(try, rownames = FALSE, filter = 'top',style ="bootstrap",selection="no
           escape = FALSE,
           colnames = c("标题","时长","观看","弹幕","日期","UP","隐藏")
           )
+
+
 
 ```
 
