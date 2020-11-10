@@ -67,7 +67,7 @@ filter_checkbox("myfilter4", "标题类型", try, ~ifelse(type==T, "多人向" ,
 datatable(try, rownames = FALSE,style ="bootstrap",selection="none",filter="top",
           options = list(
             deferRender=TRUE,
-            #lengthChange=T,
+            lengthChange=F,
             search = list(regex = TRUE, search = '^((?!输入屏蔽词).)*$'),
                         pagingType="numbers",
                         pageLength = 30,
