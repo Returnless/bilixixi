@@ -7,7 +7,6 @@ library(stringr)
 library(data.table)
 library(ggplot2)
 
-
 blackspace = as.character(scan("LittleBlackRoom.txt"))
 blacklist = c("")
 
