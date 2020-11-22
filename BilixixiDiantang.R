@@ -10,7 +10,7 @@ library(ggplot2)
 blackspace = as.character(scan("LittleBlackRoom.txt"))
 blacklist = c("")
 
-vie = read.csv("docs/BilixixiDiantangOn.csv",header = T)
+vie = read.csv("docs/BilixixiDiantangOn 2011.csv",header = T)
 head(vie)
 vie$titlelink = as.character(vie$titlelink)
 vie$uplink = as.character(vie$uplink)
