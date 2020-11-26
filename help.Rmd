@@ -101,7 +101,7 @@ help {data-width=650}
 
 <h5><details><summary>点击查看小黑屋用户UID号</summary> 
 
-`r as.character(scan("LittleBlackRoom.txt"))`
+`r as.character(scan("docs/LittleBlackRoom.txt"))`
 
 </details> </h5>
 
