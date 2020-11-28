@@ -7,7 +7,7 @@ library(stringr)
 library(data.table)
 library(ggplot2)
 
-blackspace = as.character(scan("LittleBlackRoom.txt"))
+blackspace = as.character(scan("docs/LittleBlackRoom.txt"))
 blacklist = c("")
 
 vie = read.csv("docs/BilixixiDiantangOn 2011.csv",header = T)
