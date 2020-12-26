@@ -42,9 +42,9 @@ Column {data-width=650}
 
 支持排序·筛选·搜索功能 | 人工小黑屋 | 支持近3月作品 | 显示最新上传在榜期数据
 
-<a href="help.html#event" style="color:#B200B2;">【限时活动】金骨朵投票</a> · <a href="http://t.cn/A6GRTk0u" style="color:#B200B2;" target="_blank">微博人气剧集</a> · <a href="http://t.cn/A6G13Uw3" style="color:#B200B2;" target="_blank">微博人气角色</a>
+<a href="http://t.cn/A6GRTk0u" style="color:#B200B2;" target="_blank">【最后限定】微博人气剧集</a> · <a href="http://t.cn/A6G13Uw3" style="color:#B200B2;" target="_blank">微博人气角色</a>
   
-<a href="https://www.bilibili.com/video/BV1WX4y1u7Mr" style="color:#B200B2;">【公告】魔熙先生抢先版登陆b站！</a>
+<a href="https://v.qq.com/x/cover/mzc00200ho7ghuq/q3214gjd9cx.html?" style="color:#B200B2;">❤ 庆祝罗云熙先生出道十周年 ❤</a>
 
 </br>
 
