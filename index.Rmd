@@ -40,7 +40,7 @@ Column {data-width=650}
 <h4>☁️ 罗云熙B站首页拯救计划 · 最新 ☁️</h4>
 </br>
 
-支持排序·筛选·搜索功能 | 人工小黑屋 | 支持近3月作品 | 显示最新上传在榜期数据
+支持排序·筛选·搜索功能 | 人工小黑屋 | 支持近100天作品 | 显示最新上传在榜期数据
 
 <!-- <a href="http://t.cn/A6GRTk0u" style="color:#B200B2;" target="_blank">【最后限定】微博人气剧集</a> · <a href="http://t.cn/A6G13Uw3" style="color:#B200B2;" target="_blank">微博人气角色</a> -->
 
