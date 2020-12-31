@@ -42,7 +42,7 @@ Column {data-width=650}
 
 支持排序·筛选·搜索功能 | 人工小黑屋 | 支持近100天作品 | 显示最新上传在榜期数据
 
-<a href="https://m.weibo.cn/p/1059030002_8354_75" style="color:#B200B2;" target="_blank">【新年快乐】最美表演投票</a>
+<a href="https://m.weibo.cn/p/1059030002_8354_75" style="color:#B200B2;" target="_blank">【新年快乐】最美表演</a> · <a href="http://t.cn/A6qHkKMh" style="color:#B200B2;" target="_blank">有数演员</a>  · <a href="http://t.cn/A6q84hQs" style="color:#B200B2;" target="_blank">有数剧集投票</a>
 
 <!-- <a href="https://v.qq.com/x/cover/mzc00200ho7ghuq/q3214gjd9cx.html?" style="color:#B200B2;">❤ 庆祝罗云熙先生出道十周年 ❤</a> -->
 
