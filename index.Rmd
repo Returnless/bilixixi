@@ -13,7 +13,6 @@ output:
        - { title: "帮助", href: "help.html", align: left }
     includes:
        in_header: GA.html
-       after_body: footer_index.html
 ---
 
 ```{r setup, include=FALSE}
@@ -42,7 +41,7 @@ Column {data-width=650}
 
 支持排序·筛选·搜索功能 | 人工小黑屋 | 支持近100天作品 | 显示最新上传在榜期数据
 
-<a href="https://www.bilibili.com/video/BV1Nf4y147Zq" style="color:#B200B2;" target="_blank">熙熙玩桌游</a>
+<a href="https://www.bilibili.com/video/BV1Nf4y147Zq" style="color:#B200B2;" target="_blank">熙熙玩桌游</a> | <a href="diantang.html" style="color:#B200B2;" target="_blank">殿堂更新啦</a>
 <!-- <a href="https://v.qq.com/x/cover/mzc00200ho7ghuq/q3214gjd9cx.html?" style="color:#B200B2;">❤ 庆祝罗云熙先生出道十周年 ❤</a> -->
 
 </br>
@@ -141,4 +140,6 @@ datatable(try, rownames = FALSE, filter = 'top',style ="bootstrap",selection="no
 
 
 
-
+<center>
+最近更新: `r lastdate` | 微博: [\@Re_空中三日](https://www.weibo.com/6722029638/)
+</center>
