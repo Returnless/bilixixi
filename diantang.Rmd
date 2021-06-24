@@ -44,15 +44,17 @@ Column {data-width=650}
 </center>
 
 
-### {data-height=103}
+### {data-height=128}
 
 ```{r}
 bscols(
-filter_checkbox("myfilter1", "年份", try, ~factor(ifelse(year(vie$upload) <=2018, "2018以前",ifelse(year(vie$upload)  <= 2019, "2019年内", "2020以来")),levels = c("2018以前", "2019年内", "2020以来"))),
+filter_checkbox("myfilter1", "年份", try, ~factor(ifelse(year(vie$upload) <=2018, "2018以前",
+                                                       ifelse(year(vie$upload)==2019, "2019年内", 
+                                                              ifelse(year(vie$upload)==2020, "2020年内","2021以来"))),levels = c("2018以前", "2019年内", "2020年内","2021以来"))),
 
 filter_checkbox("myfilter2", "视频时长", try, ~factor(ifelse(lengthnum < 300 , "5分以内",ifelse(lengthnum < 900, "5-15分", "15分以上")),levels = c("5分以内", "5-15分", "15分以上"))),
 
-filter_checkbox("myfilter3", "播放数据", try, ~factor(ifelse(viewnum < 10000 , "1万以下",ifelse(viewnum < 50000, "1万-5万", "5万以上")),levels = c("1万以下", "1万-5万", "5万以上"))),
+filter_checkbox("myfilter3", "播放数据", try, ~factor(ifelse(viewnum < 1000,"1千以下" ,ifelse(viewnum < 10000 , "1千-1万",ifelse(viewnum < 50000, "1万-5万", "5万以上"))),levels = c("1千以下","1千-1万", "1万-5万", "5万以上"))),
 
 filter_checkbox("myfilter4", "标题类型", try, ~ifelse(type==T, "多人向" , "个人向"))
 )
