@@ -42,7 +42,7 @@ Column {data-width=650}
 支持排序·筛选·搜索功能 | 人工小黑屋 | 支持近100天作品 | 显示最新上传在榜期数据
 
 <!-- <a href="https://www.bilibili.com/video/BV1Nf4y147Zq" style="color:#B200B2;" target="_blank">熙熙玩桌游</a> | <a href="diantang.html" style="color:#B200B2;" target="_blank">殿堂更新啦</a> -->
-<!-- <a href="https://v.qq.com/x/cover/mzc00200ho7ghuq/q3214gjd9cx.html?" style="color:#B200B2;">❤ 庆祝罗云熙先生出道十周年 ❤</a> -->
+<a href="https://weibo.com/u/6850085433" style="color:#B200B2;" target="_blank">❤【心跳源计划】山哥要来啦 | 7.22起爱奇艺+腾讯+优酷+浙江+江苏黄金档五台联播 ❤</a>
 
 </br>
 
