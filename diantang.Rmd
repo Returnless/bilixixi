@@ -36,7 +36,7 @@ Column {data-width=650}
 <h1> 哔哩熙熙动画!</h1>
 <h4>☁️ 罗云熙B站首页拯救计划 · 殿堂 ☁️</h4>
 </br>
-支持排序·筛选·搜索功能 | 支持标签搜索·屏蔽 | 支持投币100以上的历史作品
+支持排序·筛选·搜索功能 | 支持标签搜索·屏蔽 | 支持投币66以上的历史作品
 
 <!-- <a href="https://www.bilibili.com/video/BV1Nf4y147Zq" style="color:#B200B2;" target="_blank">熙熙玩桌游</a> | <a href="diantang.html" style="color:#B200B2;" target="_blank">殿堂更新啦</a> -->
 
@@ -154,5 +154,5 @@ datatable(try, rownames = FALSE,style ="bootstrap",selection="none",filter="top"
 
 
 <center>
-最近更新: 2021-5-16 | 微博: [\@Re_空中三日](https://www.weibo.com/6722029638/)
+最近更新: 2021-9-3 | 微博: [\@Re_空中三日](https://www.weibo.com/6722029638/)
 </center>
