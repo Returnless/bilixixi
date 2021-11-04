@@ -41,9 +41,10 @@ Column {data-width=650}
 
 支持排序·筛选·搜索功能 | 人工小黑屋 | 支持近100天作品 | 显示最新上传在榜期数据
 
-<!-- <a href="https://www.bilibili.com/video/BV1Nf4y147Zq" style="color:#B200B2;" target="_blank">熙熙玩桌游</a> | <a href="diantang.html" style="color:#B200B2;" target="_blank">殿堂更新啦</a> -->
+<!-- <a href="https://weibo.com/u/7711871913" style="color:#B200B2;" target="_blank">熙熙玩桌游</a> | <a href="diantang.html" style="color:#B200B2;" target="_blank">殿堂更新啦</a> -->
 
-<!-- ❤ 哔哩熙熙·一岁啦 ❤ -->
+<a style="color:#B200B2;" href="https://weibo.com/u/7711871913" target="_blank">❤ 11月5日上午9点30分 · 恭迎烬皇 ❤</a>
+
 
 </br>
 
