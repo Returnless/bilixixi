@@ -43,7 +43,7 @@ Column {data-width=650}
 
 <!-- <a href="https://weibo.com/u/7711871913" style="color:#B200B2;" target="_blank">熙熙玩桌游</a> | <a href="diantang.html" style="color:#B200B2;" target="_blank">殿堂更新啦</a> -->
 
-<a style="color:#B200B2;" href="https://weibo.com/u/7711871913" target="_blank">❤ 11月5日上午9点30分 · 恭迎烬皇 ❤</a>
+<a style="color:#B200B2;" href="https://weibo.com/u/7711871913" target="_blank">❤ 恭喜【长月烬明】澹台烬开机大吉 ❤</a>
 
 
 </br>
