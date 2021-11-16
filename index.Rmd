@@ -39,12 +39,9 @@ Column {data-width=650}
 <h4>☁️ 罗云熙B站首页拯救计划 · 最新 ☁️</h4>
 </br>
 
+
+
 支持排序·筛选·搜索功能 | 人工小黑屋 | 支持近100天作品 | 显示最新上传在榜期数据
-
-<!-- <a href="https://weibo.com/u/7711871913" style="color:#B200B2;" target="_blank">熙熙玩桌游</a> | <a href="diantang.html" style="color:#B200B2;" target="_blank">殿堂更新啦</a> -->
-
-<a style="color:#B200B2;" href="https://weibo.com/u/7711871913" target="_blank">❤ 恭喜【长月烬明】澹台烬开机大吉 ❤</a>
-
 
 </br>
 
@@ -53,6 +50,7 @@ Column {data-width=650}
 
 
 ### {data-height=103}
+
 
 ```{r}
 bscols(
@@ -63,9 +61,14 @@ filter_checkbox("myfilter2", "视频时长", try, ~factor(ifelse(lengthnum < 300
 filter_checkbox("myfilter3", "播放数据", try, ~factor(ifelse(viewnum < 1000 , "1千以下",ifelse(viewnum < 10000, "1千-1万", "1万以上")),levels = c("1千以下", "1千-1万", "1万以上"))),
 
 filter_checkbox("myfilter4", "标题类型", try, ~ifelse(tag==T, "多人向" , "个人向")))
+
 ```
 
+
+
+
 ###
+
 
 ```{r vie}
 
@@ -142,6 +145,5 @@ datatable(try, rownames = FALSE, filter = 'top',style ="bootstrap",selection="no
 
 
 
-<center>
-最近更新: `r lastdate` | 微博: [\@Re_空中三日](https://www.weibo.com/6722029638/)
-</center>
+
+> 最近更新: `r lastdate` | 微博: [\@空中的三日啊](https://www.weibo.com/6722029638/)
