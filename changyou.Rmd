@@ -23,6 +23,10 @@ library(DT)
 library(stringr)
 library(crosstalk)
 source("BilixixiChangyou.R")
+# vie$coinvie=vie$coin/vie$viewnum
+# vie$textvie=vie$text/vie$viewnum
+
+
 try = SharedData$new(vie)
 
 ```
@@ -37,7 +41,7 @@ Column {data-width=650}
 <h1> 哔哩熙熙动画!</h1>
 <h4>☁️ 罗云熙B站首页拯救计划 · 畅游 ☁️</h4>
 </br>
-支持排序·筛选·搜索功能 | 支持标签搜索·屏蔽 | 支持检测到的所有历史作品 | 响应时间稍久请耐心等待
+支持排序·筛选·搜索功能 | 支持标签搜索·屏蔽 | 支持探测到的所有作品 | 响应时间稍久·请耐心等待
 
 <!-- <a href="https://www.bilibili.com/video/BV1Nf4y147Zq" style="color:#B200B2;" target="_blank">熙熙玩桌游</a> | <a href="diantang.html" style="color:#B200B2;" target="_blank">殿堂更新啦</a> -->
 
@@ -55,11 +59,12 @@ filter_checkbox("myfilter1", "年份", try, ~factor(ifelse(year(vie$upload) <=20
                                                        ifelse(year(vie$upload)==2019, "2019年内", 
                                                               ifelse(year(vie$upload)==2020, "2020年内","2021以来"))),levels = c("2018以前", "2019年内", "2020年内","2021以来"))),
 
-filter_checkbox("myfilter2", "视频时长", try, ~factor(ifelse(lengthnum < 300 , "5分以内",ifelse(lengthnum < 900, "5-15分", "15分以上")),levels = c("5分以内", "5-15分", "15分以上"))),
+filter_checkbox("myfilter2", "视频时长", try, ~factor(ifelse(vie$lengthnum < 300 , "5分以内",ifelse(vie$lengthnum < 900, "5-15分", "15分以上")),levels = c("5分以内", "5-15分", "15分以上"))),
 
-filter_checkbox("myfilter3", "播放数据", try, ~factor(ifelse(viewnum < 1000,"1千以下" ,ifelse(viewnum < 10000 , "1千-1万",ifelse(viewnum < 50000, "1万-5万", "5万以上"))),levels = c("1千以下","1千-1万", "1万-5万", "5万以上"))),
+filter_checkbox("myfilter3", "播放数据", try, ~factor(ifelse(vie$viewnum < 500,"5百以下" ,ifelse(vie$viewnum < 2000 , "5百-2千",ifelse(vie$viewnum < 10000, "2千-1万", "1万以上"))),levels = c("5百以下","5百-2千", "2千-1万", "1万以上"))),
 
-filter_checkbox("myfilter4", "标题类型", try, ~ifelse(type==T, "多人向" , "个人向"))
+
+filter_checkbox("myfilter4", "标题类型", try, ~ifelse(vie$type==T, "多人向" , "个人向"))
 )
 ```
 
@@ -106,6 +111,12 @@ datatable(try, rownames = FALSE,style ="bootstrap",selection="none",filter="top"
               list(targets=8,
                    visible=FALSE
               ),
+              # list(targets=9,
+              #      visible=FALSE
+              # ),
+              # list(targets=10,
+              #      visible=FALSE
+              # ),
                list(targets=2,
                    render = JS(
                      "function(data, type, row, meta) {",
