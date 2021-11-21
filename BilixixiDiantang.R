@@ -8,9 +8,7 @@ library(data.table)
 library(ggplot2)
 
 blackspace = as.character(scan("docs/LittleBlackRoom.txt"))
-blacklist = c("")
-
-vie = read.csv("docs/BilixixiDiantangOn 2108.csv",header = T)
-head(vie)
-vie$titlelink = as.character(vie$titlelink)
-vie$uplink = as.character(vie$uplink)
+load("/Users/jiehuixu/Documents/GitHub/bilixixi/docs/BilixixiDiantangOn 2111.RData")
+#vie = read.csv("docs/BilixixiDiantangOn 2111.csv",header = T)
+vie=vie66
+rm(vie66)

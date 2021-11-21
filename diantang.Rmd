@@ -23,7 +23,6 @@ library(stringr)
 library(crosstalk)
 source("BilixixiDiantang.R")
 try = SharedData$new(vie)
-
 ```
 
 

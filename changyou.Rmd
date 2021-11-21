@@ -1,0 +1,158 @@
+---
+title: "哔哩熙熙动画!"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: scroll
+    theme: bootstrap
+    logo: BilixixiLogo.png
+    css: my.css
+    navbar:
+       - { title: "最新", href: "index.html", align: left }
+       - { title: "殿堂", href: "diantang.html", align: left }
+       - { title: "帮助", href: "help.html", align: left }
+    includes:
+       in_header: GA.html
+---
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = FALSE,message=FALSE,warning=FALSE, cache=FALSE)
+library(DT)
+library(stringr)
+library(crosstalk)
+source("BilixixiChangyou.R")
+try = SharedData$new(vie)
+
+```
+
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+
+<center>
+</br>
+<h1> 哔哩熙熙动画!</h1>
+<h4>☁️ 罗云熙B站首页拯救计划 · 殿堂 ☁️</h4>
+</br>
+支持排序·筛选·搜索功能 | 支持标签搜索·屏蔽 | 支持检测到的所有历史作品 | 响应时间稍久请耐心等待
+
+<!-- <a href="https://www.bilibili.com/video/BV1Nf4y147Zq" style="color:#B200B2;" target="_blank">熙熙玩桌游</a> | <a href="diantang.html" style="color:#B200B2;" target="_blank">殿堂更新啦</a> -->
+
+<!-- ❤ 哔哩熙熙·一岁啦 ❤ -->
+
+</br>
+</center>
+
+
+### {data-height=128}
+
+```{r}
+bscols(
+filter_checkbox("myfilter1", "年份", try, ~factor(ifelse(year(vie$upload) <=2018, "2018以前",
+                                                       ifelse(year(vie$upload)==2019, "2019年内", 
+                                                              ifelse(year(vie$upload)==2020, "2020年内","2021以来"))),levels = c("2018以前", "2019年内", "2020年内","2021以来"))),
+
+filter_checkbox("myfilter2", "视频时长", try, ~factor(ifelse(lengthnum < 300 , "5分以内",ifelse(lengthnum < 900, "5-15分", "15分以上")),levels = c("5分以内", "5-15分", "15分以上"))),
+
+filter_checkbox("myfilter3", "播放数据", try, ~factor(ifelse(viewnum < 1000,"1千以下" ,ifelse(viewnum < 10000 , "1千-1万",ifelse(viewnum < 50000, "1万-5万", "5万以上"))),levels = c("1千以下","1千-1万", "1万-5万", "5万以上"))),
+
+filter_checkbox("myfilter4", "标题类型", try, ~ifelse(type==T, "多人向" , "个人向"))
+)
+```
+
+###
+
+```{r vie}
+
+datatable(try, rownames = FALSE,style ="bootstrap",selection="none",filter="top",
+          options = list(
+            deferRender=TRUE,
+            lengthChange=F,
+            search = list(regex = TRUE, search = '^((?!屏蔽词).)*$'),
+                        pagingType="numbers",
+                        pageLength = 30,
+                        language = list(search = '屏蔽词(仅替换右边框内文字,"|"线隔开多个词):',
+                        lengthMenu='每页显示 _MENU_ 个视频',
+                        zeroRecords='什么也没找到，换个关键词试试',
+                        info='现在第 _PAGE_ 页 共 _PAGES_ 页',
+                        infoEmpty='没有可显示的页面',
+                        infoFiltered='(从 _MAX_ 项中搜索)',
+                        paginate=list(previous='上一页',
+                        'next'='下一页',
+                        first='第一页',
+                        last='最后一页')),
+                        
+          columnDefs = list(
+              # list(targets=0,
+              #      render = JS(
+              #        "function(data, type, row, meta) {",
+              #        "return type === 'display'?",
+              #        "data.split('>');",
+              #        "}")
+              # ),
+              list(targets=1,
+                   render = JS(
+                     "function(data, type, row, meta) {",
+                     "return type === 'display'?",
+                     "'<span title=\"'+data +'\">'+Math.floor(data/60) + '分'+Math.floor(data%60)+'秒</span>' : data;",
+                     "}")
+              ),
+              list(targets=7,
+                   visible=FALSE
+              ),
+              list(targets=8,
+                   visible=FALSE
+              ),
+               list(targets=2,
+                   render = JS(
+                     "function(data, type, row, meta) {",
+                     "return type === 'display' && data>=10000 ?",
+                     "'<span title=\"' + data + '\">'+Math.floor(data/1000)/10+'万</span>' : data;",
+                     "}")
+              ),
+              list(targets=3,
+                   render = JS(
+                     "function(data, type, row, meta) {",
+                     "return type === 'display' && data>=10000 ?",
+                     "'<span title=\"' + data + '\">'+Math.floor(data/1000)/10+'万</span>' : data;",
+                     "}")
+              ),
+              list(targets=4,
+                   render = JS(
+                     "function(data, type, row, meta) {",
+                     "return type === 'display' && data>=10000 ?",
+                     "'<span title=\"' + data + '\">'+Math.floor(data/1000)/10+'万</span>' : data;",
+                     "}")
+              ),
+              list(targets=5,
+                   render = JS(
+                     "function(data, type, row, meta) {",
+                     "return type === 'display' ?",
+                     "'<span title=\"' + data + '\">' + data.substr(2, 8) + '</span>' : data;",
+                     "}")
+              ),
+              # list(targets= '_all',
+              #   createdCell=JS(
+              #     "function (td, cellData, rowData, row, col) {",
+              #       "$(td).css('padding', '8px 4px 8px 4px')",
+              #     "}")
+              # ),
+              list(targets=1:4,
+                   class="dt-body-center"),
+              list(targets='_all',
+                   class="dt-head-center")
+          )),
+          escape = FALSE,
+          colnames = c("标题","时长","观看","弹幕","投币","日期","UP","Tag","Type")
+          )
+
+
+```
+
+
+
+<center>
+最近更新: 2021-9-3 | 微博: [\@空中的三日啊](https://www.weibo.com/6722029638/)
+</center>
