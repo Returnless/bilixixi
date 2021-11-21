@@ -41,9 +41,9 @@ Column {data-width=650}
 <h4>☁️ 罗云熙B站首页拯救计划 · 最新 ☁️</h4>
 </br>
 
-
-
 支持排序·筛选·搜索功能 | 人工小黑屋 | 支持近100天作品 | 显示最新上传在榜期数据
+
+<a href="changyou.html" style="color:#B200B2;" >收录后台记录所有条目的【畅游】模块正式上线，快去试试吧!</a>
 
 </br>
 
@@ -147,5 +147,7 @@ datatable(try, rownames = FALSE, filter = 'top',style ="bootstrap",selection="no
 
 
 
+<center>
+最近更新: `r lastdate` | 微博: [\@空中的三日啊](https://www.weibo.com/6722029638/)
+</center>
 
-> 最近更新: `r lastdate` | 微博: [\@空中的三日啊](https://www.weibo.com/6722029638/)
