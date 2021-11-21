@@ -10,6 +10,7 @@ output:
     navbar:
        - { title: "最新", href: "index.html", align: left }
        - { title: "殿堂", href: "diantang.html", align: left }
+       - { title: "畅游", href: "changyou.html", align: left }
        - { title: "帮助", href: "help.html", align: left }
     includes:
        in_header: GA.html
@@ -23,6 +24,7 @@ library(stringr)
 library(crosstalk)
 source("BilixixiDiantang.R")
 try = SharedData$new(vie)
+
 ```
 
 
@@ -153,5 +155,5 @@ datatable(try, rownames = FALSE,style ="bootstrap",selection="none",filter="top"
 
 
 <center>
-最近更新: 2021-9-3 | 微博: [\@空中的三日啊](https://www.weibo.com/6722029638/)
+最近更新: 2021-11-17 | 微博: [\@空中的三日啊](https://www.weibo.com/6722029638/)
 </center>

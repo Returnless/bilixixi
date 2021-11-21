@@ -7,8 +7,7 @@ library(stringr)
 library(data.table)
 library(ggplot2)
 
-blackspace = as.character(scan("docs/LittleBlackRoom.txt"))
+#blackspace = as.character(scan("docs/LittleBlackRoom.txt"))
 load("/Users/jiehuixu/Documents/GitHub/bilixixi/docs/BilixixiDiantangOn 2111.RData")
-#vie = read.csv("docs/BilixixiDiantangOn 2111.csv",header = T)
-vie=vie66
+vie = vie66
 rm(vie66)

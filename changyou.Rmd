@@ -10,6 +10,7 @@ output:
     navbar:
        - { title: "最新", href: "index.html", align: left }
        - { title: "殿堂", href: "diantang.html", align: left }
+       - { title: "畅游", href: "changyou.html", align: left }
        - { title: "帮助", href: "help.html", align: left }
     includes:
        in_header: GA.html
@@ -34,7 +35,7 @@ Column {data-width=650}
 <center>
 </br>
 <h1> 哔哩熙熙动画!</h1>
-<h4>☁️ 罗云熙B站首页拯救计划 · 殿堂 ☁️</h4>
+<h4>☁️ 罗云熙B站首页拯救计划 · 畅游 ☁️</h4>
 </br>
 支持排序·筛选·搜索功能 | 支持标签搜索·屏蔽 | 支持检测到的所有历史作品 | 响应时间稍久请耐心等待
 
@@ -154,5 +155,5 @@ datatable(try, rownames = FALSE,style ="bootstrap",selection="none",filter="top"
 
 
 <center>
-最近更新: 2021-9-3 | 微博: [\@空中的三日啊](https://www.weibo.com/6722029638/)
+最近更新: 2021-11-17 | 微博: [\@空中的三日啊](https://www.weibo.com/6722029638/)
 </center>

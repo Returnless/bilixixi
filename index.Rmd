@@ -10,7 +10,9 @@ output:
     navbar:
        - { title: "最新", href: "index.html", align: left }
        - { title: "殿堂", href: "diantang.html", align: left }
+       - { title: "畅游", href: "changyou.html", align: left }
        - { title: "帮助", href: "help.html", align: left }
+
     includes:
        in_header: GA.html
 ---
