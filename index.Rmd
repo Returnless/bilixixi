@@ -45,6 +45,8 @@ Column {data-width=650}
 
 <a href="changyou.html" style="color:#B200B2;" >收录后台记录所有条目的【畅游】模块正式上线，快去试试吧!</a>
 
+
+<a href="" style="color:#B200B2;" target="_blank">热烈庆祝【良言写意】厉择良11.30上线腾讯视频·爱奇艺</a> 
 </br>
 
 </center>
