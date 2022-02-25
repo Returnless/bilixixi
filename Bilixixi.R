@@ -31,9 +31,13 @@ vie = mydf%>%filter(!space%in%blackspace)
 
 vie$upload = as.Date(vie$upload)
 vie$lengthnum = lubridate::seconds(lubridate::hms(vie$length))
-
+head(vie)
 vie = vie%>%group_by(titlelink)%>%filter(difftime(lastdate,upload,units = "days") <= 100)%>%
   filter(row_number()==n())%>%arrange(-viewnum)
+
+vie = vie%>%group_by(space,upload,title,length)%>%
+  filter(row_number()==n())%>%ungroup()
+
 
 vie = vie[,c("titlelink","lengthnum","viewnum","text","upload","uplink","tag")]
 
