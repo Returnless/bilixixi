@@ -8,5 +8,5 @@ library(data.table)
 library(ggplot2)
 
 blackspace = as.character(scan("docs/LittleBlackRoom.txt"))
-load("/Users/jiehuixu/Documents/GitHub/bilixixi/docs/BilixixiDiantangAll 2111.RData")
+load("/Users/jiehuixu/Documents/GitHub/bilixixi/docs/BilixixiDiantangAll 2202.RData")
 #vie = read.csv("docs/BilixixiDiantangOn 2111.csv",header = T)

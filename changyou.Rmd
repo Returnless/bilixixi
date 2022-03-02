@@ -44,6 +44,7 @@ Column {data-width=650}
 支持排序·筛选·搜索功能 | 支持标签搜索·屏蔽 | 支持探测到的所有作品 | 响应时间稍久·请耐心等待
 
 <!-- <a href="https://www.bilibili.com/video/BV1Nf4y147Zq" style="color:#B200B2;" target="_blank">熙熙玩桌游</a> | <a href="diantang.html" style="color:#B200B2;" target="_blank">殿堂更新啦</a> -->
+<a href="http://bilixixi.cc/diantang.html" style="color:#B200B2;" target="_blank">❤ 哔哩熙熙 | 殿堂·畅游模块更新 ❤</a>
 
 <!-- ❤ 哔哩熙熙·一岁啦 ❤ -->
 
@@ -55,9 +56,9 @@ Column {data-width=650}
 
 ```{r}
 bscols(
-filter_checkbox("myfilter1", "年份", try, ~factor(ifelse(year(vie$upload) <=2018, "2018以前",
-                                                       ifelse(year(vie$upload)==2019, "2019年内", 
-                                                              ifelse(year(vie$upload)==2020, "2020年内","2021以来"))),levels = c("2018以前", "2019年内", "2020年内","2021以来"))),
+filter_checkbox("myfilter1", "年份", try, ~factor(ifelse(year(vie$upload) <=2019, "2019以前",
+                                                       ifelse(year(vie$upload)==2020, "2020年内", 
+                                                              ifelse(year(vie$upload)==2021, "2021年内","2022以来"))),levels = c("2019以前", "2020年内", "2021年内","2022以来"))),
 
 filter_checkbox("myfilter2", "视频时长", try, ~factor(ifelse(vie$lengthnum < 300 , "5分以内",ifelse(vie$lengthnum < 900, "5-15分", "15分以上")),levels = c("5分以内", "5-15分", "15分以上"))),
 
@@ -166,5 +167,5 @@ datatable(try, rownames = FALSE,style ="bootstrap",selection="none",filter="top"
 
 
 <center>
-最近更新: 2021-11-17 | 微博: [\@空中的三日啊](https://www.weibo.com/6722029638/)
+最近更新: 2022-3-1 | 微博: [\@空中的三日啊](https://www.weibo.com/6722029638/)
 </center>
