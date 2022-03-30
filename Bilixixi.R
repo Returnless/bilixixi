@@ -13,6 +13,7 @@ lastdate = str_extract(lastup,"20[0-9]{2}-[0-9]{2}-[0-9]{2}")
 
 blackspace = as.character(scan("docs/LittleBlackRoom.txt"))
 
+
 mydf = read.csv(paste0("docs/",lastup),header = T)
 
 mydf$viewnum = ifelse(grepl("万",mydf$view),
