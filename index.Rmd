@@ -43,17 +43,10 @@ Column {data-width=650}
 
 支持排序·筛选·搜索功能 | 人工小黑屋 | 支持近100天作品 | 显示最新上传在榜期数据
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<a href="" style="color:#B200B2;" target="_blank">❤ 哔哩熙熙【最新】恢复更新 | 恭喜【长月烬明·澹台烬】杀青大吉！ ❤</a>
-=======
-<!-- <a href="http://bilixixi.cc/diantang.html" style="color:#B200B2;" target="_blank">❤ 哔哩熙熙 | 殿堂·畅游模块更新 ❤</a> -->
->>>>>>> 882e96038ddcb8d8be7814ee95d1b2e28031b331
-=======
-<!-- <a href="http://bilixixi.cc/diantang.html" style="color:#B200B2;" target="_blank">❤ 哔哩熙熙 | 殿堂·畅游模块更新 ❤</a> -->
->>>>>>> 882e96038ddcb8d8be7814ee95d1b2e28031b331
 
-<a href="" style="color:#B200B2;" target="_blank">❤ 恭贺澹台烬杀青大吉！！！哔哩熙熙【最新】将在明日恢复正常更新 ❤</a>
+<a href="" style="color:#B200B2;" target="_blank">❤ 哔哩熙熙【最新】恢复更新 | 恭喜【长月烬明·澹台烬】杀青大吉！ ❤</a>
+
+<!-- <a href="http://bilixixi.cc/diantang.html" style="color:#B200B2;" target="_blank">❤ 哔哩熙熙 | 殿堂·畅游模块更新 ❤</a> -->
 
 
 </br>
