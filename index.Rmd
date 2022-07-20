@@ -44,10 +44,9 @@ Column {data-width=650}
 支持排序·筛选·搜索功能 | 人工小黑屋 | 支持近100天作品 | 显示最新上传在榜期数据
 
 
-<!-- <a href="https://www.bilibili.com/video/BV1uR4y1w72y?" style="color:#B200B2;" target="_blank">❤ 天梭520</a> | <a href="https://www.bilibili.com/video/BV1dA4y1f7RF?" style="color:#B200B2;" target="_blank">资生堂520</a> | <a href="https://www.bilibili.com/video/BV1SZ4y187ya?" style="color:#B200B2;" target="_blank">自然堂520 ❤</a> -->
+<a href="http://bilixixi.cc/diantang.html" style="color:#B200B2;" target="_blank">❤ 哔哩熙熙 | 殿堂·畅游模块更新啦 ❤</a>
 
-<!-- <a href="http://bilixixi.cc/diantang.html" style="color:#B200B2;" target="_blank">❤ 哔哩熙熙 | 殿堂·畅游模块更新 ❤</a> -->
-
+<a href="https://www.bilibili.com/video/BV18U4y1q71E?" style="color:#B200B2;" target="_blank">❤ 恭喜熙熙喜提 爱怡珂 </a><a href="https://www.bilibili.com/video/BV1hG411n75F?" style="color:#B200B2;" target="_blank">| 凯利安 首位代言人 ❤</a>
 
 </br>
 
