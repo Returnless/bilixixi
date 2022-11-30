@@ -8,6 +8,6 @@ library(data.table)
 library(ggplot2)
 
 #blackspace = as.character(scan("docs/LittleBlackRoom.txt"))
-load("/Users/jiehuixu/Documents/GitHub/bilixixi/docs/BilixixiDiantangOn 2207.RData")
+load("/Users/jiehuixu/Documents/GitHub/bilixixi/docs/BilixixiDiantangOn 2211.RData")
 vie = vie66
 rm(vie66)

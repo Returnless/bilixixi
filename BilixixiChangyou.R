@@ -8,4 +8,4 @@ library(data.table)
 library(ggplot2)
 
 #blackspace = as.character(scan("docs/LittleBlackRoom.txt"))
-load("/Users/jiehuixu/Documents/GitHub/bilixixi/docs/BilixixiDiantangAll 2207.RData")
+load("/Users/jiehuixu/Documents/GitHub/bilixixi/docs/BilixixiDiantangAll 2211.RData")

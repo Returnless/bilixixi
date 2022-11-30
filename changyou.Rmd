@@ -23,9 +23,6 @@ library(DT)
 library(stringr)
 library(crosstalk)
 source("BilixixiChangyou.R")
-# vie$coinvie=vie$coin/vie$viewnum
-# vie$textvie=vie$text/vie$viewnum
-
 
 try = SharedData$new(vie)
 
@@ -43,7 +40,6 @@ Column {data-width=650}
 </br>
 支持排序·筛选·搜索功能 | 支持标签搜索·屏蔽 | 支持探测到的所有作品 | 响应时间稍久·请耐心等待
 
-<!-- <a href="https://www.bilibili.com/video/BV1Nf4y147Zq" style="color:#B200B2;" target="_blank">熙熙玩桌游</a> | <a href="diantang.html" style="color:#B200B2;" target="_blank">殿堂更新啦</a> -->
 <a href="http://bilixixi.cc/diantang.html" style="color:#B200B2;" target="_blank">❤ 哔哩熙熙 | 殿堂·畅游模块更新 ❤</a>
 
 <!-- ❤ 哔哩熙熙·一岁啦 ❤ -->

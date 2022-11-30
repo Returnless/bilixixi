@@ -42,7 +42,7 @@ Column {data-width=650}
 <!-- <a href="https://www.bilibili.com/video/BV1Nf4y147Zq" style="color:#B200B2;" target="_blank">熙熙玩桌游</a> | <a href="diantang.html" style="color:#B200B2;" target="_blank">殿堂更新啦</a> -->
 
 <!-- ❤ 哔哩熙熙·一岁啦 ❤ -->
-<a href="http://bilixixi.cc/changyou.html" style="color:#B200B2;" target="_blank">❤ 哔哩熙熙 | 殿堂·畅游模块更新 ❤</a>
+<!-- <a href="http://bilixixi.cc/changyou.html" style="color:#B200B2;" target="_blank">❤ 哔哩熙熙 | 殿堂·畅游模块更新 ❤</a> -->
 
 </br>
 </center>
@@ -156,5 +156,5 @@ datatable(try, rownames = FALSE,style ="bootstrap",selection="none",filter="top"
 
 
 <center>
-最近更新: 2022-3-1 | 微博: [\@空中的三日啊](https://www.weibo.com/6722029638/)
+最近更新: 2022-11-29 | 微博: [\@空中的三日啊](https://www.weibo.com/6722029638/)
 </center>
